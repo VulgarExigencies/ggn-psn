@@ -29,9 +29,10 @@
 
     const voicePrefix = pluralize(voiceLanguages) ? 'Audio Languages' : 'Audio Language';
     const screenPrefix = pluralize(screenLanguages) ? 'Screen Languages' : 'Screen Language';
-
-    return `[b]${screenPrefix}[/b]: ${screenLanguages}
-[b]${voicePrefix}[/b]: ${voiceLanguages}`;
+    
+    
+    return `[b]${voicePrefix}[/b]: ${voiceLanguages}
+[b]${screenPrefix}[/b]: ${screenLanguages}`;
   }
 
   const makeGazelleNode = () => {
