@@ -3,7 +3,7 @@
 // @match https://www.playstation.com/en-*/games/*
 // @match https://store.playstation.com/en-*/product/*
 // @match https://store.playstation.com/en-*/concept/*
-// @version          0.1
+// @version          0.2
 // @grant        GM_setClipboard
 // ==/UserScript==
 
@@ -27,8 +27,8 @@
       return `[b]${prefix}[/b]: ${voiceLanguages}`;
     }
 
-    const voicePrefix = pluralize(voiceLanguages) ? 'Full Audio Languages' : 'Full Audio Language';
-    const screenPrefix = pluralize(screenLanguages) ? 'Interface and Subtitle Languages' : 'Interface and Subtitle Language';
+    const voicePrefix = pluralize(voiceLanguages) ? 'Audio Languages' : 'Audio Language';
+    const screenPrefix = pluralize(screenLanguages) ? 'Screen Languages' : 'Screen Language';
 
     return `[b]${screenPrefix}[/b]: ${screenLanguages}
 [b]${voicePrefix}[/b]: ${voiceLanguages}`;
