@@ -3,7 +3,7 @@
 // @match https://www.playstation.com/en-*/games/*
 // @match https://store.playstation.com/en-*/product/*
 // @match https://store.playstation.com/en-*/concept/*
-// @version          0.2
+// @version          0.3
 // @grant        GM_setClipboard
 // ==/UserScript==
 
@@ -29,8 +29,8 @@
 
     const voicePrefix = pluralize(voiceLanguages) ? 'Audio Languages' : 'Audio Language';
     const screenPrefix = pluralize(screenLanguages) ? 'Screen Languages' : 'Screen Language';
-    
-    
+
+
     return `[b]${voicePrefix}[/b]: ${voiceLanguages}
 [b]${screenPrefix}[/b]: ${screenLanguages}`;
   }
@@ -69,5 +69,5 @@
     targetDl.appendChild(makeActionsNode());
   };
 
-  makeGGnActions();
+  setTimeout(makeGGnActions, 250);
 })();
