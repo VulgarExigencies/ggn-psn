@@ -46,6 +46,7 @@
     actionsNode.innerHTML = '';
 
     const bbCodeButton = document.createElement('button');
+    bbCodeButton.style.display = 'flex';
     const text = 'Copy BBCode';
     const textNode = bbCodeButton.appendChild(document.createElement('span'));
     textNode.innerHTML = `${text}<img src="https://ptpimg.me/sx226x.png">`;
